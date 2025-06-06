@@ -25,11 +25,10 @@
 }
 
 .section-img {
+  width: 180px;
+  height: auto;
   flex: 0 0 auto;
   scroll-snap-align: start;
-  max-width: 180px;
-  width: 100%;
-  height: auto;
 }
 
 .section-img:hover {
