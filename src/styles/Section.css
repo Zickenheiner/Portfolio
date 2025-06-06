@@ -1,0 +1,54 @@
+.section-container * {
+  color: var(--primary-color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section-container section {
+  display: flex;
+  gap: 5px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.section-container section::-webkit-scrollbar {
+  display: none;
+}
+
+.section-img {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+.section-img:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
+}
+
+.projects {
+  cursor: pointer;
+}
+
+#projects {
+  scroll-margin-top: 80px;
+}
+
+#skills {
+  scroll-margin-top: 80px;
+}
+
+#hobbies {
+  scroll-margin-top: 80px;
+}

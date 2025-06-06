@@ -1,0 +1,41 @@
+.main-container {
+  height: 100vh;
+  background-image: linear-gradient(
+      to top,
+      var(--secondary-color),
+      rgba(128, 128, 128, 0) 40%
+    ),
+    url("/images/main_img.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 430px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.main-container > section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main-container > img {
+  position: absolute;
+  top: 500px;
+  right: 0;
+  border-left: 3px solid var(--primary-color);
+}
+
+@media screen and (max-width: 750px) {
+  .main-container > img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .main-container {
+    padding: 100px 20px 0 20px;
+  }
+}

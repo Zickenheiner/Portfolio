@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #141414;
+}
+
+:root {
+  --primary-color: #e6e6e6;
+  --secondary-color: #141414;
+  --third-color: #808080;
+  --accent-color: #ff0000;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-weight: 400;
+}
