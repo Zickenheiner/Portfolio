@@ -20,7 +20,7 @@ import Footer from "../components/Footer";
 
 export default function Main() {
   const projects = [
-    { img: geocodeProjectImg, url: "" },
+    { img: geocodeProjectImg, url: "https://geocode-orcin.vercel.app/" },
     { img: pokemonArenaImg, url: "https://pokemon-arenadex.onrender.com/" },
     { img: walletImg, url: "https://wallet-zickenheiner.vercel.app/" },
   ];

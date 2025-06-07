@@ -12,24 +12,24 @@
 }
 
 .section-container section {
+  padding: 10px 0;
   display: flex;
   gap: 5px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .section-container section::-webkit-scrollbar {
   display: none;
 }
 
-.section-img {
-  width: 180px;
+/* .section-img {
   height: auto;
   flex: 0 0 auto;
   scroll-snap-align: start;
-}
+} */
 
 .section-img:hover {
   transform: scale(1.08);
