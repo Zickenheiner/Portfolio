@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Brancardier : 8 Years on the Move",
+        "description": "For 8 years, I worked as a patient transporter in a clinic. It was intense, and human. Teamwork, care, and calm in stressful situations...I learned a lot.",
+        "img": "/images/patient_transporter_img.svg",
+        "time": "8 years",
+        "selected": false
+    },
+    {
+        "title": "Career switch : from care to code",
+        "description": "Tech had been my passion for 4 years and in 2024, I joined Wild Code School in Toulouse and became a Web & Mobile Developer. I like to understand what I do and do what I understand ; that’s how I build things that make sense.",
+        "img": "/images/career_switch_img.svg",
+        "time": "5 months",
+        "selected": false
+    },
+    {
+        "title": "Level Up : The Bachelor",
+        "description": "Next step: keep learning and go further. In September 2025, I’ll start a Bachelor’s degree in Computer Science (3rd year) at Ynov Campus Toulouse, in a work-study program. More code, more projects, more growth!",
+        "img": "/images/level_up_img.svg",
+        "time": "1 years",
+        "selected": true
+    }
+]

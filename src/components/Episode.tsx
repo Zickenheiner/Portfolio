@@ -2,17 +2,17 @@ import "../styles/Episode.css";
 
 interface EpisodeProps {
   episode: {
-    id: number;
     title: string;
     description: string;
     img: string;
     time: string;
     selected: boolean;
   };
+  id: number;
 }
 
-export default function Episode({ episode }: EpisodeProps) {
-  const { id, title, description, img, time, selected } = episode;
+export default function Episode({ episode, id }: EpisodeProps) {
+  const { title, description, img, time, selected } = episode;
   return (
     <article className={`episode-container ${selected ? "selected" : ""}`}>
       <div>
