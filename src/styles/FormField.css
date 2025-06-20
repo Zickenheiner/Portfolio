@@ -1,0 +1,29 @@
+.form-field {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.form-field input,
+.form-field textarea {
+  font-family: var(--font-family);
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
+
+.form-field input,
+.form-field textarea:focus {
+  outline-color: var(--secondary-color);
+}
+
+.form-field textarea {
+  resize: vertical;
+}

@@ -18,18 +18,11 @@
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-  /* padding-bottom: 10px; */
 }
 
 .section-container section::-webkit-scrollbar {
   display: none;
 }
-
-/* .section-img {
-  height: auto;
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-} */
 
 .section-img:hover {
   transform: scale(1.08);
@@ -50,4 +43,22 @@
 
 #hobbies {
   scroll-margin-top: 80px;
+}
+
+@media screen and (max-width: 555px) {
+  .section-container section > img {
+    height: 100px;
+  }
+
+  .section-container section > a {
+    height: 120px;
+  }
+
+  .section-container section > a > img {
+    height: 100%;
+  }
+
+  .section-container > h2 {
+    font-size: 18px;
+  }
 }

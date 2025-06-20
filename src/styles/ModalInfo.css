@@ -1,0 +1,111 @@
+.modal-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  max-width: 850px;
+  width: 90%;
+}
+
+.modal-info-container {
+  padding: 20px 50px;
+  max-height: 98vh;
+  width: 100%;
+  background-color: #181818;
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  border-radius: 10px;
+}
+
+.modal-info-container > span:nth-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #bcbcbc;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.modal-info-container > span:nth-child(3) {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.modal-info-container > section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.modal-info-container > section > h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.modal-info-container > section > h2 > img {
+  width: 30px;
+  height: 30px;
+}
+
+.modal-info-container > section > p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.modal-info-container > section > section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.modal-info-container > section > section > h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.modal-info-container > section > section > p {
+  align-self: center;
+}
+
+.close-icon {
+  all: unset;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+@media screen and (max-width: 770px) {
+  .modal-info-container {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modal-info-container {
+    max-height: 80vh;
+  }
+}

@@ -3,7 +3,6 @@ import githubIcon from "/images/github_icon.svg";
 import linkedinIcon from "/images/linkedin_icon.svg";
 import paperClipIcon from "/images/paperclip_icon.svg";
 export default function Footer() {
-  //fais un tableau de tout les <p>
   const footerLinks = [
     "Open Source Credits",
     "Release Notes",
@@ -19,7 +18,7 @@ export default function Footer() {
     "Terms of npm install",
   ];
   return (
-    <div className="footer-container">
+    <footer className="footer-container">
       <section>
         <a
           href="https://github.com/Zickenheiner"
@@ -45,6 +44,6 @@ export default function Footer() {
         ))}
       </section>
       <p>© 1997-{new Date().getFullYear()} Remiflix, Inc.</p>
-    </div>
+    </footer>
   );
 }

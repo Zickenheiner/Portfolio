@@ -16,13 +16,16 @@ import driftHobbiesImg from "/images/drift_hobbies_img.svg";
 import img18 from "/images/+18.svg";
 import Section from "../components/Section";
 import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+import ModalInfo from "../components/ModalInfo";
+import { useEffect, useState } from "react";
 
 export default function Main() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const projects = [
-    { img: geocodeProjectImg, url: "https://geocode-orcin.vercel.app/" },
     { img: pokemonArenaImg, url: "https://pokemon-arenadex.onrender.com/" },
     { img: walletImg, url: "https://wallet-zickenheiner.vercel.app/" },
+    { img: geocodeProjectImg, url: "https://geocode-orcin.vercel.app/" },
   ];
   const skills = [
     reactSkillsImg,
@@ -38,9 +41,20 @@ export default function Main() {
     snowboardHobbiesImg,
     driftHobbiesImg,
   ];
+
+  useEffect(() => {
+    document.body.style.overflow = isModalOpen ? "hidden" : "auto";
+  }, [isModalOpen]);
+
   return (
-    <div className="main-container">
-      <Infos />
+    <main className="main-container">
+      {isModalOpen && (
+        <>
+          <div className="modal-overlay" />
+          <ModalInfo setIsModalOpen={setIsModalOpen} />
+        </>
+      )}
+      <Infos setIsModalOpen={setIsModalOpen} />
       <img src={img18} alt="+18" />
       <section>
         <Section
@@ -53,7 +67,6 @@ export default function Main() {
         <Section title="My hobbies" contents={hobbies} id="hobbies" />
       </section>
       <Contact />
-      <Footer />
-    </div>
+    </main>
   );
 }

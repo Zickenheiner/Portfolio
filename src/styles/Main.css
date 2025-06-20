@@ -1,13 +1,13 @@
 .main-container {
-  height: 100vh;
   background-image: linear-gradient(
-      to top,
-      var(--secondary-color),
-      rgba(128, 128, 128, 0) 40%
+      to bottom,
+      transparent 42%,
+      var(--secondary-color) 52%
     ),
     url("/images/main_img.svg");
-  background-size: cover;
+  background-size: 1500px auto;
   background-repeat: no-repeat;
+  background-position: top left;
   position: relative;
   padding: 430px 50px 0 50px;
   display: flex;
