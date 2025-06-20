@@ -13,6 +13,7 @@
   font-family: var(--font-family);
   font-weight: var(--font-weight);
   font-size: 14px;
+  z-index: 2;
 }
 
 .navbar-left {
