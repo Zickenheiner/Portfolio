@@ -24,18 +24,26 @@ export default function Section({
       <section>
         {contents.map((content: string | ContentsProjectType) =>
           isProject && typeof content !== "string" ? (
-            <a
-              href={content.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={content.url}
-            >
+            content.url !== "" ? (
+              <a
+                href={content.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={content.url}
+              >
+                <img
+                  src={content.img}
+                  alt={content.img}
+                  className={`section-img ${isProject && "projects"}`}
+                />
+              </a>
+            ) : (
               <img
                 src={content.img}
                 alt={content.img}
-                className={`section-img ${isProject && "projects"}`}
+                className={`section-img`}
               />
-            </a>
+            )
           ) : (
             <img
               src={typeof content === "string" ? content : ""}
