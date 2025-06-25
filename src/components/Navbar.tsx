@@ -1,9 +1,8 @@
 import "../styles/Navbar.css";
 import logoImg from "/images/remiflix.svg";
-import magnifyingGlassImg from "/images/magnifying_glass_icon.svg";
-import arrowImg from "/images/arrow_icon.svg";
-import accountImg from "/images/account_icon.svg";
-import bellImg from "/images/bell_icon.svg";
+import githubIcon from "/images/github_icon.svg";
+import linkedinIcon from "/images/linkedin_icon.svg";
+import paperClipIcon from "/images/paperclip_icon.svg";
 
 export default function Navbar() {
   return (
@@ -29,11 +28,23 @@ export default function Navbar() {
         </ul>
       </div>
       <div className="navbar-right">
-        <img src={magnifyingGlassImg} alt="magnifying_glass_icon" />
-        <p>Developer</p>
-        <img src={bellImg} alt="bell_icon" />
-        <img src={accountImg} alt="account_icon" />
-        <img src={arrowImg} alt="arrow_icon" />
+        <a
+          href="https://github.com/Zickenheiner"
+          target="blank"
+          rel="noopener noreferrer"
+        >
+          <img src={githubIcon} alt="github-icon" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/remi-zickenheiner/"
+          target="blank"
+          rel="noopener noreferrer"
+        >
+          <img src={linkedinIcon} alt="linkedin-icon" />
+        </a>
+        <a href="/images/CV.pdf" download="Remi_Zickenheiner_CV.pdf">
+          <img src={paperClipIcon} alt="paperclip-icon" />
+        </a>
       </div>
     </nav>
   );

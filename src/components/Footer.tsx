@@ -20,25 +20,6 @@ export default function Footer() {
   return (
     <footer className="footer-container">
       <section>
-        <a
-          href="https://github.com/Zickenheiner"
-          target="blank"
-          rel="noopener noreferrer"
-        >
-          <img src={githubIcon} alt="github-icon" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/remi-zickenheiner/"
-          target="blank"
-          rel="noopener noreferrer"
-        >
-          <img src={linkedinIcon} alt="linkedin-icon" />
-        </a>
-        <a href="/images/CV.pdf" download="Remi_Zickenheiner_CV.pdf">
-          <img src={paperClipIcon} alt="paperclip-icon" />
-        </a>
-      </section>
-      <section>
         {footerLinks.map((link) => (
           <p key={link}>{link}</p>
         ))}

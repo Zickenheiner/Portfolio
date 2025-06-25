@@ -1,8 +1,8 @@
 .main-container {
   background-image: linear-gradient(
       to bottom,
-      transparent 42%,
-      var(--secondary-color) 52%
+      transparent 30%,
+      var(--secondary-color) 40%
     ),
     url("/images/main_img.svg");
   background-size: 1500px auto;

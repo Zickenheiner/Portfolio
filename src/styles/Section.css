@@ -24,13 +24,13 @@
   display: none;
 }
 
-.section-img:hover {
-  transform: scale(1.08);
-  transition: 0.3s;
-}
-
 .projects {
   cursor: pointer;
+}
+
+.projects:hover {
+  transform: scale(1.08);
+  transition: 0.3s;
 }
 
 #projects {
