@@ -1,7 +1,4 @@
 import "../styles/Footer.css";
-import githubIcon from "/images/github_icon.svg";
-import linkedinIcon from "/images/linkedin_icon.svg";
-import paperClipIcon from "/images/paperclip_icon.svg";
 export default function Footer() {
   const footerLinks = [
     "Open Source Credits",
