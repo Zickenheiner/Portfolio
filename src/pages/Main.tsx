@@ -16,11 +16,15 @@ export default function Main() {
     document.body.style.overflow = isModalOpen ? "hidden" : "auto";
   }, [isModalOpen]);
 
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <main className="main-container">
       {isModalOpen && (
         <>
-          <div className="modal-overlay" />
+          <div className="modal-overlay" onClick={handleCloseModal} />
           <ModalInfo setIsModalOpen={setIsModalOpen} />
         </>
       )}
