@@ -54,13 +54,9 @@
   transition: 0.3s;
 }
 
-@media screen and (max-width: 810px) {
-  .navbar-right {
+@media screen and (max-width: 700px) {
+  .navbar-left > ul {
     display: none;
-  }
-  .navbar-left {
-    justify-content: space-between;
-    width: 100%;
   }
 }
 
@@ -84,11 +80,5 @@
 
   .logo {
     width: 70px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  .navbar-list > a > li {
-    font-size: 9px;
   }
 }
